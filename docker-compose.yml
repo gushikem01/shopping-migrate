@@ -1,0 +1,17 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5.7.32
+    container_name: mysql-container
+    volumes:
+        - ./db/mysql_data:/var/lib/mysql
+        - ./db/initdb.d:/docker-entrypoint-initdb.d
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_DATABASE: shopping_database
+      MYSQL_PASSWORD: docker
+      TZ: 'Asia/Tokyo'
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
