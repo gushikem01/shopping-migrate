@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS customer (
+CREATE TABLE IF NOT EXISTS customers (
   `id` BIGINT AUTO_INCREMENT NOT NULL COMMENT 'id',
   `first_name` VARCHAR(64) NULL COMMENT '' ,
   `last_name` VARCHAR(64) NULL COMMENT '' ,
@@ -16,4 +16,4 @@ PACK_KEYS = DEFAULT
 ROW_FORMAT = DEFAULT;
 
 -- insert sample data
-insert into customer(first_name, last_name, zip1, zip2, pref, address1, address2)values( 'Tanaka', 'Tarou', '123', '456', 'Shizuoka', 'Hamamatsu', 'kitaku');
+insert into customers(first_name, last_name, zip1, zip2, pref, address1, address2)values( 'Tanaka', 'Tarou', '123', '456', 'Shizuoka', 'Hamamatsu', 'kitaku');
