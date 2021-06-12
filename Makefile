@@ -25,4 +25,5 @@ else
 	@echo 'migrate create -ext sql -dir ./mysql/migrations [NAME]'
 	@echo 'migrate -database 'mysql://root:root@tcp(localhost:3306)/shopping_database' -path ./mysql/migrations up'
 	@echo 'migrate -database 'mysql://root:root@tcp(localhost:3306)/shopping_database' -path ./mysql/migrations down'
+	@echo 'migrate -database 'mysql://root:root@tcp(localhost:3306)/shopping_database' -path ./mysql/migrations force [バージョン番号]'
 endif
