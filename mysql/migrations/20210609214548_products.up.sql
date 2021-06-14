@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS product (
+CREATE TABLE IF NOT EXISTS products (
   `id` BIGINT AUTO_INCREMENT NOT NULL COMMENT 'id',
   `category_id` INT NOT NULL DEFAULT 0 COMMENT 'category_id',
   `product_name` VARCHAR(64) NULL COMMENT '' ,
@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS product (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_unicode_ci
-COMMENT = 'product'
+COMMENT = 'products'
 PACK_KEYS = DEFAULT
 ROW_FORMAT = DEFAULT;
 
-INSERT INTO product (category_id, product_name, price, description) values (1, 'savannah', 30000, 'MTG card');
+INSERT INTO products (category_id, product_name, price, description) values (1, 'savannah', 30000, 'MTG card');
