@@ -1,6 +1,7 @@
 version: "3"
 services:
   mysql:
+    restart: always
     image: mysql:5.7.32
     container_name: mysql-container
     volumes:
